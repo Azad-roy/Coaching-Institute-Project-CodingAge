@@ -17,7 +17,7 @@ images = [
     ("https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "feature-assessment.jpg"),
     ("https://images.unsplash.com/photo-1503676382389-4809596d5290", "feature-support.jpg"),
     # Cards Grid
-    ("https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "card-mission.jpg"),
+    ("https://images.unsplash.com/photo-1517841905240-472988babdf9", "card-mission.jpg"),
     ("https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "card-vision.jpg"),
     ("https://images.unsplash.com/photo-1513258496099-48168024aec0", "card-courses.jpg"),
     ("https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "card-success.jpg"),
