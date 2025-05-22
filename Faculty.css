@@ -1,0 +1,354 @@
+        /* ====== YOUR ORIGINAL HEADER/FOOTER STYLES ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header - Identical to Homepage */
+        .main-header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding-bottom: 1rem;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .logo span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .header-info {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .header-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+            background: rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* ====== FACILITY PAGE SPECIFIC STYLES ====== */
+        .faculty-hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(44, 62, 80, 0.9)),
+                url('Images/favorites/faculty-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .faculty-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .faculty-hero p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Faculty Grid Section */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 2rem 0;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #3498db;
+            margin: 0.5rem auto;
+        }
+
+        .faculty-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .faculty-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .faculty-img-container {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .faculty-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .faculty-card:hover .faculty-img {
+            transform: scale(1.05);
+        }
+
+        .faculty-subject {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(52, 152, 219, 0.9);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+        }
+
+        .faculty-info {
+            padding: 1.5rem;
+        }
+
+        .faculty-name {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .faculty-qualification {
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .faculty-bio {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .faculty-stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+
+        .stat-item span {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Teaching Methodology */
+        .methodology {
+            background: #f5f9fc;
+            padding: 3rem 0;
+            margin: 3rem 0;
+        }
+
+        .method-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .method-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #3498db;
+        }
+
+        .method-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .method-icon {
+            color: #3498db;
+            font-size: 1.2rem;
+        }
+
+        /* ====== YOUR ORIGINAL FOOTER STYLES ====== */
+        .main-footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-cols {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-col {
+            margin-bottom: 2rem;
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-contact {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-desc {
+            font-size: 0.9rem;
+            color: #ecf0f1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .footer-social {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .footer-social:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-smile {
+            margin-bottom: 0.5rem;
+            color: #f1c40f;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .faculty-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-cols {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .faculty-grid,
+            .method-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .header-top {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-info {
+                justify-content: center;
+            }
+        }
