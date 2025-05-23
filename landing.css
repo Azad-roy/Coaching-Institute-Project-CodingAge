@@ -1,4 +1,3 @@
-/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ img {
   height: auto;
 }
 
-/* Header Styles */
 .main-header {
   background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
@@ -91,7 +89,6 @@ img {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
@@ -148,7 +145,6 @@ img {
   font-size: 0.9rem;
 }
 
-/* Main Content Styles */
 main {
   padding: 2rem;
   max-width: 1200px;
@@ -172,7 +168,6 @@ main {
   margin: 0.5rem auto;
 }
 
-/* Features Grid */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +199,6 @@ main {
   color: #666;
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -227,7 +221,6 @@ main {
   color: white;
 }
 
-/* Cards Grid */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,7 +273,6 @@ main {
   background: #2980b9;
 }
 
-/* Split Section */
 .split-section {
   display: flex;
   align-items: center;
@@ -326,7 +318,6 @@ main {
   background: #2980b9;
 }
 
-/* Info Cards */
 .info-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -358,7 +349,6 @@ main {
   color: #3498db;
 }
 
-/* Smile Row */
 .smile-row {
   display: flex;
   justify-content: center;
@@ -375,7 +365,6 @@ main {
   font-weight: 700;
 }
 
-/* Contact Form */
 .contact-form-section {
   max-width: 800px;
   margin: 0 auto 3rem;
@@ -420,7 +409,6 @@ main {
   background: #2980b9;
 }
 
-/* Footer */
 .main-footer {
   background: #2c3e50;
   color: white;
@@ -489,7 +477,6 @@ main {
   color: #bdc3c7;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .hero-section {
     flex-direction: column;
