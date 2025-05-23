@@ -9,7 +9,8 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 .main-header {
@@ -87,7 +88,8 @@ body {
   font-size: 0.9rem;
 }
 
-.main-nav a:hover, .main-nav a.active {
+.main-nav a:hover,
+.main-nav a.active {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -126,7 +128,8 @@ body {
   gap: 2rem;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -135,20 +138,12 @@ body {
   margin: 0 auto;
 }
 
-.contact-info h2, .contact-form h2 {
+.contact-info h2,
+.contact-form h2 {
   color: #2c3e50;
   margin-bottom: 1.5rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
   position: relative;
-}
-
-.contact-info h2::after, .contact-form h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #3498db;
-  margin-top: 0.5rem;
 }
 
 .info-item {
@@ -347,7 +342,8 @@ body {
     padding: 0 1.5rem;
   }
 
-  .contact-info, .contact-form {
+  .contact-info,
+  .contact-form {
     padding: 2rem;
   }
 
@@ -401,7 +397,8 @@ body {
     gap: 3rem;
   }
 
-  .contact-info h2, .contact-form h2 {
+  .contact-info h2,
+  .contact-form h2 {
     font-size: 2rem;
   }
 
